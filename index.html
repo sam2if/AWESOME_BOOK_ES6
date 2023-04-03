@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome_Book</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="top">
-        <div class="topic">
-            <h2>Awesome books</h2>
-            <div class="navi">
-                <a class="list"><h3>List</h3></a>
-                <a class="addnew"><h3>Add New</h3></a>
-                <a class="contacts"><h3>Contact</h3></a>
-            </div>
-        </div>
-        <br>
-        <div class="day">
-            <h4 id="demo"></h4>
-        </div>
-        <br>
-        <div class="pages">
-            <h1 class="lll"></h1>
-            <ul id="myList">
-               
-            </ul>
-            <div class="forms">
-                <form action="" class="form">
-                    <input type="text" id="title" placeholder="title" required><br>
-                    <input type="text" id="author" placeholder="author" required><br>
-                </form>
-                <button class="remove" id="button">ADD BOOK</button>
-            </div>
-            <div class="cont">
-                <h2>Contact information</h2>
-                <br><br>
-                <p>
-                  Do you have any questions or you just want to say "Hello"? <br />You
-                  can reach out to us!
-                </p>
-                <br>
-                <ul>
-                  <li>Our e-mail: mail@mail.com</li>
-                  <li>Our phone number: 0043586534422</li>
-                  <li>Ouu address: Streetname 20, 58464 City, Country</li>
-                </ul>
-            </div>
-        </div>
-        <br>
-        <div class="bott">
-            <h2>Copyright...</h2>
-        </div>
-        
-    </div>
-    
-    
-   
-        
-    <script  src="index.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
 
-    </script>
-</body>
+    <title>Awesome Book ES6</title>
+  </head>
+  <body>
+    <div class="container">
+      <!----------------------- Nav Section ------------------------>
+      <header>
+        <nav>
+          <div class="brand">
+            <h3>Awesome <span>Books</span></h3>
+          </div>
+          <ul>
+            <li class="Book-ListBtn">
+              <a href="#Book-list">List</a>
+            </li>
+            <li class="AddBook-Btn">
+              <a href="#Add-new">Add new</a>
+            </li>
+
+            <li class="contact">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!----------------------- Nav Section ------------------------>
+      <div class="date"><p id="date"></p></div>
+
+      <!----------------------- Booklist Section ------------------------>
+
+      <section id="Book-list" class="hide block">
+        <h1>Awesome Books</h1>
+        <div class="books-container"></div>
+      </section>
+
+      <!----------------------- Add-new book Section ------------------------>
+      <section id="Add-new" class="hide">
+        <form action="" id="form">
+          <h2 class="form-header">Add new book</h2>
+          <input type="text" id="title" name="title" placeholder="Title" />
+
+          <input type="text" id="author" name="author" placeholder="Author" />
+
+          <button class="add-btn">Add</button>
+        </form>
+      </section>
+
+      <!----------------------- Contact Section ------------------------>
+
+      <section id="contact" class="hide">
+        <div class="contact-holder">
+          <div class="contact-header">
+            <h2>Contact Information</h2>
+          </div>
+
+          <div class="contact-text">
+            <p>Do you have any questions or you just want to say hello?</p>
+            <p class="text-2">You can reach out to us!</p>
+          </div>
+
+          <ul class="contact-list">
+            <li>Email: felixnzomo@gmail.com</li>
+            <li>Phone numbers: +254 731 432 340</li>
+            <li>Address: Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </section>
+
+      <!----------------------- Contact Section ------------------------>
+
+      <!----------------------- Footer Section ------------------------>
+
+      <footer>
+        <p>Copyright:</p>
+        <p>Felix Nyamai</p>
+      </footer>
+    </div>
+
+    <!----------------------- Footer Section ------------------------>
+
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
