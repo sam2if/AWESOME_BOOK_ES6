@@ -1,0 +1,103 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+  .form {
+    margin-top: 4em;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .top {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .topic {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bott {
+    margin-bottom: 2em;
+    border: 2px solid black;
+  }
+  
+  .navi {
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    text-decoration: none;
+    border: 2px solid black;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  #myList {
+    display: block;
+    border: 2px solid black;
+  }
+  
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+  }
+  
+  #myList li:nth-child(odd) {
+    background: rgb(230, 228, 228);
+    padding: 0.5em;
+  }
+  
+  #myList li:nth-child(even) {
+    padding: 0 0.5em;
+  }
+  
+  .cont {
+    width: 50%;
+    margin: auto;
+  }
+  
+  .remove {
+    height: 30px;
+    width: 6em;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .forms {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form input {
+    border: 2px solid black;
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: pointer;
+  }
